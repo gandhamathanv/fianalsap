@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <img src="img1.png" alt="kongu image" class="im" />
+    <button onclick="logout()">logout</button>
+    <button onclick="goBack()">Go Back</button>
+    <p class="clg">
+        Enter the consigutive details
+    </p>
+    <form class="fm" action="./php/event.php" method="POST">
+        <ul class="list">
+            <li>
+                <label>event name</label>
+                <input type="text" name="event" />
+
+            </li>
+            <li>
+
+                <lable>event date</lable>
+                <input type="date" name="date" />
+            </li>
+            <li>
+                <button type="submit">submit</button>
+                <!-- <input type="button" name="b1" value="Register" onclick="location.href='.html'"> -->
+            </li>
+        </ul>
+
+    </form>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>
